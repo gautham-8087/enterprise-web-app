@@ -1,10 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CI/CD Static Site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Web Application - User Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> </head>
 <body>
-    <h1>🎉 Deployed using Jenkins + Maven + Tomcat</h1>
-</body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+            <h1>Enterprise Portal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome, [User Name]!</h2>
+                <p>Your personalized dashboard provides a quick overview of your key information and tasks.</p>
+                <button class="primary-button">Get Started</button>
+            </div>
+        </section>
+
+        <section class="widgets">
+            <div class="widget">
+                <h3>Notifications</h3>
+                <ul class="notification-list">
+                    <li><span class="notification-icon">🔔</span> New task assigned: Review marketing proposal. <span class="notification-date">Today</span></li>
+                    <li><span class="notification-icon">✅</span> Report submitted successfully. <span class="notification-date">Yesterday</span></li>
+                    <li><span class="notification-icon">📅</span> Upcoming meeting: Project kickoff at 2 PM. <span class="notification-date">Tomorrow</span></li>
+                </ul>
+                <a href="notifications.html" class="view-all">View All Notifications</a>
+            </div>
+
+            <div class="widget">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#">Submit Expense Report</a></li>
+                    <li><a href="#">Request Time Off</a></li>
+                    <li><a href="#">Access Knowledge Base</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Project Status</h3>
+                <div class="progress-bar">
+                    <label for="project-a">Project A:</label>
+                    <progress id="project-a" value="75" max="100">75%</progress><span>75%</span>
+                </div>
+                <div class="progress-bar">
+                    <label for="project-b">Project B:</label>
+                    <progress id="project-b" value="30" max="100">30%</progress><span>30%</span>
+                </div>
+                <a href="projects.html" class="view-all">View All Projects</a>
+            </div>
+        </section>
+
+        <section class="data-overview">
+            <h2>Data Overview</h2>
+            <div class="data-cards">
+                <div class="data-card">
+                    <h3>Total Users</h3>
+                    <span class="data-value">500+</span>
+                </div>
+                <div class="data-card">
+                    <h3>Active Projects</h3>
+                    <span class="data-value">25</span>
+                </div>
+                <div class="data-card">
+                    <h3>Pending Approvals</h3>
+                    <span class="data-value">12</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script> </body>
 </html>
