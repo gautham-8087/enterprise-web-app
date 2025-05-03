@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasks - Enterprise Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    nav a.active {
+      text-decoration: underline;
+    }
+    main {
+      padding: 30px;
+    }
+    .task-card {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .task-card h3 {
+      margin-top: 0;
+    }
+    .status {
+      font-weight: bold;
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enterprise Portal</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="tasks.html" class="active">Tasks</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <h2>My Tasks</h2>
+    <div class="task-card">
+      <h3>Review Design Document</h3>
+      <p>Ensure the design document aligns with updated client requirements.</p>
+      <p class="status">Status: In Progress</p>
+    </div>
+    <div class="task-card">
+      <h3>Team Standup Meeting</h3>
+      <p>Daily sync-up with the development team at 10:00 AM.</p>
+      <p class="status">Status: Completed</p>
+    </div>
+    <div class="task-card">
+      <h3>Code Review</h3>
+      <p>Review pull requests from frontend team.</p>
+      <p class="status">Status: Pending</p>
+    </div>
+  </main>
+</body>
+</html>
